@@ -1,3 +1,3 @@
 <?php
 
-echo 'randomize.co';
+echo 'randomize.co ready to go';
