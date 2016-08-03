@@ -1,2 +1,2 @@
-# rando
+# randomize
 The ultimate randomizer
