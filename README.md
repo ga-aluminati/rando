@@ -4,7 +4,7 @@
 
 The ultimate randomizer. 
 
-## Versions
+## Version History
 
 ### 0.1.3
 
