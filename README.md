@@ -17,14 +17,15 @@ Have you ever wondered how many programming buzz words can be squeezed into a si
 #### v0.1.2
 
 - Set up Webpack
-- Split static pages into React components
 - Set up Redux
 - Set up React Router
+- Split static pages into React components
 
 #### v0.1.1
 
 - Write user stories
 - Develop wireframes
+- Develop site map and flows
 - Develop static pages
 
 #### v0.1.0
