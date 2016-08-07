@@ -37,10 +37,10 @@ Have you ever wondered how many programming buzz words can be squeezed into a si
 - Set up Gulp tasks to concatenate and minify CSS & JS files
 - Set up Git web hooks for deployment to production
 
-## Technologies & Services
+## Technologies
 
 * [Lumen PHP Framework](https://lumen.laravel.com/)
-* [React Components](https://facebook.github.io/react/)
+* [React](https://facebook.github.io/react/)
 * [React Router](https://github.com/reactjs/react-router)
 * [Redux](http://redux.js.org/)
 * [Webpack](https://webpack.github.io/)
