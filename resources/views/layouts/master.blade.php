@@ -12,10 +12,12 @@
 <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" media="all" />
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" type="text/css" media="all" />
+<link rel="stylesheet" href="{{ URL::asset('css/global.css') }}" type="text/css" media="all" />
 </head>
 <body>
   <div>
     @yield('content')
   </div>
+<script src="{{ URL::asset('js/app.js') }}" type="text/javascript"></script>
 </body>
 </html>
