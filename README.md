@@ -31,7 +31,7 @@ The ultimate randomizer.
 - Set up Blade master layout and views
 - Set up support for SASS 
 - Set up Gulp tasks to concatenate and minify CSS & JS files
-- Set up GitHub web hooks to deploy to production
+- Set up Git web hooks for deployment to production
 
 ## Technologies & Services
 
