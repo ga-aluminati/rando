@@ -8,7 +8,7 @@ Have you ever wondered how many programming buzz words can be squeezed into a si
 
 ## User Stories
 
-> As a (role) I want (something) so that (benefit).
+> As a **(role)** I want **(something)** so that **(benefit)**.
 
 * User story one
 
