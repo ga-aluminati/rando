@@ -29,6 +29,7 @@ Have you ever wondered how many programming buzz words can be squeezed into a si
 
 #### v0.1.0
 
+- Set up domain, host and SSL 
 - Set up Git repo
 - Initialized Lumen framework
 - Set up Blade master layout and views
