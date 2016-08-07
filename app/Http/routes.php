@@ -12,6 +12,5 @@
 */
 
 $app->get('/', function () use ($app) {
-    //return $app->version();
-    return 'let us do this??';
+  return view('index');
 });
