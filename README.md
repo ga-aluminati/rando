@@ -1,8 +1,8 @@
 # Randomize
 
-[randomize.co](https://randomize.co)
+[https://randomize.co](https://randomize.co)
 
-The **ultimate** randomizer. 
+The **ultimate** person randomizer. 
 
 Have you ever wondered how many programming buzz words can be squeezed into a single side project? We're about to see. 
 
