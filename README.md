@@ -9,13 +9,13 @@ The ultimate randomizer.
 #### 0.1.3
 
 - Set up Auth0 
-- Set up Redux
 - Set up Socket.IO 
 - Integration with [Randomize API](https://github.com/ga-aluminati/randomize-api)
 
 #### 0.1.2
 
 - Split static pages into React components
+- Set up Redux
 - Set up React Router
 
 #### 0.1.1
