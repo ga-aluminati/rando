@@ -8,6 +8,7 @@ The ultimate randomizer.
 
 #### 0.1.3
 
+- Set up Auth0 
 - Set up Redux
 - Set up Socket.IO 
 - Integration with [Randomize API](https://github.com/ga-aluminati/randomize-api)
@@ -32,12 +33,13 @@ The ultimate randomizer.
 - Set up Gulp tasks to concatenate and minify CSS & JS files
 - Set up GitHub web hooks to deploy to production
 
-## Technologies 
+## Technologies & Services
 
 * [Lumen PHP Framework](https://lumen.laravel.com/)
 * [React Components](https://facebook.github.io/react/)
 * [React Router](https://github.com/reactjs/react-router)
 * [Redux](http://redux.js.org/)
+* [Auth0](https://auth0.com/)
 * [Socket.IO](http://socket.io/)
 * [Gulp](http://gulpjs.com/)
 * [Bootstrap](http://getbootstrap.com/)
