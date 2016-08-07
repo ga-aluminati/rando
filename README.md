@@ -2,7 +2,9 @@
 
 [randomize.co](https://randomize.co)
 
-The ultimate randomizer. 
+The **ultimate** randomizer. 
+
+How many hot web technologies can be squeezed into a side project? We're about to see. 
 
 ## Version History
 
@@ -14,6 +16,7 @@ The ultimate randomizer.
 
 #### 0.1.2
 
+- Set up Webpack
 - Split static pages into React components
 - Set up Redux
 - Set up React Router
@@ -39,6 +42,7 @@ The ultimate randomizer.
 * [React Components](https://facebook.github.io/react/)
 * [React Router](https://github.com/reactjs/react-router)
 * [Redux](http://redux.js.org/)
+* [Webpack](https://webpack.github.io/)
 * [Auth0](https://auth0.com/)
 * [Socket.IO](http://socket.io/)
 * [Gulp](http://gulpjs.com/)
