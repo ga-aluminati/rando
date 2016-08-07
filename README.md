@@ -4,30 +4,30 @@
 
 The **ultimate** randomizer. 
 
-How many hot web technologies can be squeezed into a side project? We're about to see. 
+Have you ever wondered how many programming buzz words can be squeezed into a single side project? We're about to see. 
 
 ## Version History
 
-#### 0.1.3
+#### v0.1.3
 
 - Set up Auth0 
 - Set up Socket.IO 
 - Integration with [Randomize API](https://github.com/ga-aluminati/randomize-api)
 
-#### 0.1.2
+#### v0.1.2
 
 - Set up Webpack
 - Split static pages into React components
 - Set up Redux
 - Set up React Router
 
-#### 0.1.1
+#### v0.1.1
 
 - Write user stories
 - Develop wireframes
 - Develop static pages
 
-#### 0.1.0
+#### v0.1.0
 
 - Set up Git repo
 - Initialized Lumen framework
