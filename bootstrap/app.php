@@ -78,6 +78,8 @@ $app->singleton(
 |
 */
 
+$app->register(Irazasyed\Larasupport\Providers\ArtisanServiceProvider::class);
+
 // $app->register(App\Providers\AppServiceProvider::class);
 // $app->register(App\Providers\AuthServiceProvider::class);
 // $app->register(App\Providers\EventServiceProvider::class);
