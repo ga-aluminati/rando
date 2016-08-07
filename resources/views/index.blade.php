@@ -3,5 +3,7 @@
 @section('title', 'Welcome')
 
 @section('content')
-randomize.co is purty coo
+
+<h1>randomize.co</h1>
+
 @endsection
