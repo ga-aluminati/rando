@@ -15,9 +15,9 @@
   <link rel="stylesheet" href="{{ elixir('css/global.css') }}" type="text/css" media="all" />
 </head>
 <body>
-  <div class="container">
-    @yield('content')
-  </div>
+<div class="container">
+  @yield('content')
+</div>
 <script src="{{ elixir('js/bundle.js') }}" type="text/javascript"></script>
 </body>
 </html>
