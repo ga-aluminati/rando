@@ -6,24 +6,24 @@ The ultimate randomizer.
 
 ## Version History
 
-### 0.1.3
+#### 0.1.3
 
 - Set up Redux
 - Set up Socket.IO 
 - Integration with [Randomize API](https://github.com/ga-aluminati/randomize-api)
 
-### 0.1.2
+#### 0.1.2
 
 - Split static pages into React components
 - Set up React Router
 
-### 0.1.1
+#### 0.1.1
 
 - Write user stories
 - Develop wireframes
 - Develop static pages
 
-### 0.1.0
+#### 0.1.0
 
 - Set up Git repo
 - Initialized Lumen framework
