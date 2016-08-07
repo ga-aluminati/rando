@@ -35,6 +35,7 @@ Have you ever wondered how many programming buzz words can be squeezed into a si
 - Set up Blade master layout and views
 - Set up support for SASS 
 - Set up Gulp tasks to concatenate and minify CSS & JS files
+- Set up Elixir for versioning & cache busting static assets
 - Set up Git web hooks for deployment to production
 
 ## Technologies
