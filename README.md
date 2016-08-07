@@ -6,6 +6,12 @@ The **ultimate** person randomizer.
 
 Have you ever wondered how many programming buzz words can be squeezed into a single side project? We're about to see. 
 
+## User Stories
+
+> As a (role) I want (something) so that (benefit).
+
+* User story one
+
 ## Version History
 
 #### v0.1.3
