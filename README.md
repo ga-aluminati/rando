@@ -45,15 +45,6 @@ This project does not put into practice [TDD](https://en.wikipedia.org/wiki/Test
 - Set up Elixir for versioning & cache busting static assets
 - Set up Git web hooks for deployment to production
 
-## How to Contribute
-
-* Fork this repo and then clone it to your machine
-* Follow the [Laravel documentation](https://laravel.com/docs/5.2/homestead) to install Laravel Homestead, which will set up your development environment and dependencies
-* [Install Composer](https://getcomposer.org/) to manage dependencies if you don't already have it
-* [Configure your environment](https://lumen.laravel.com/docs/5.2/configuration#environment-configuration). Use **.env.example** in the repo to create a new file called **.env** with the environment variables relevant to your dev environment
-* Create a new feature branch and do your magic
-* Submit a pull request
-
 ## Technologies
 
 * [Lumen PHP Framework](https://lumen.laravel.com/)
@@ -67,3 +58,11 @@ This project does not put into practice [TDD](https://en.wikipedia.org/wiki/Test
 * [Gulp](http://gulpjs.com/)
 * [Bootstrap](http://getbootstrap.com/)
 
+## How to Contribute
+
+* Fork this repo and then clone it to your machine
+* Follow the [Laravel documentation](https://laravel.com/docs/5.2/homestead) to install Laravel Homestead, which will set up your development environment and dependencies
+* [Install Composer](https://getcomposer.org/) to manage dependencies if you don't already have it
+* [Configure your environment](https://lumen.laravel.com/docs/5.2/configuration#environment-configuration). Use **.env.example** in the repo to create a new file called **.env** with the environment variables relevant to your dev environment
+* Create a new feature branch and do your magic
+* Submit a pull request
