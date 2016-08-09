@@ -65,4 +65,5 @@ This project does not put into practice [TDD](https://en.wikipedia.org/wiki/Test
 * [Install Composer](https://getcomposer.org/) to manage dependencies if you don't already have it
 * [Configure your environment](https://lumen.laravel.com/docs/5.2/configuration#environment-configuration). Use **.env.example** in the repo to create a new file called **.env** with the environment variables relevant to your dev environment
 * Create a new feature branch and do your magic
+* Push the branch back to your forked GitHub repo
 * Submit a pull request
