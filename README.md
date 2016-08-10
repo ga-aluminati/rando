@@ -10,7 +10,12 @@ This project does not put into practice [TDD](https://en.wikipedia.org/wiki/Test
 
 > As a **(role)** I want **(something)** so that **(benefit)**.
 
-* As an **event organizer** I want **to match members randomly** so that **everyone has someone to participate with**
+* As an **event organizer** I want **to match members randomly** so that **everyone has someone to participate with**.
+* As a **user** I want **to be able to log in with Facebook** so that **I don't have to remember another password**.
+* As a **user** I want **to be able to participate without logging in** so that **I can try out the service**.
+* As an **event organizer** I want **to allow people to participate without logging in** so that **I can get events going as fast as possible**.
+* As an **event organizer** I want **to be able to force a user to log in** so that **I can know who they are**.
+* As an **event organizer** I want **to display a count down** so that **people can see when the match will occur**.
 
 ## Version History
 
