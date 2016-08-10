@@ -16,6 +16,7 @@ This project does not put into practice [TDD](https://en.wikipedia.org/wiki/Test
 * As an **event organizer** I want **to allow people to participate without logging in** so that **I can get events going as fast as possible**.
 * As an **event organizer** I want **to be able to force a user to log in** so that **I can know who they are**.
 * As an **event organizer** I want **to display a count down** so that **people can see when the match will occur**.
+* As an **event organizer** I want **to control how many people are matched in a group** so that **I can accomodate any type of activity regardless of size**.
 
 ## Version History
 
