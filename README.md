@@ -10,7 +10,7 @@ This project does not put into practice [TDD](https://en.wikipedia.org/wiki/Test
 
 > As a **(role)** I want **(something)** so that **(benefit)**.
 
-* As an **event organizer** I want **to randomize members** so that **it will match people up effortlessly**
+* As an **event organizer** I want **to match members randomly** so that **I don't have to do it manually**
 
 ## Version History
 
