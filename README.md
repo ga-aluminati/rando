@@ -28,7 +28,7 @@ This project does not put into practice [TDD](https://en.wikipedia.org/wiki/Test
 * As a **user** I want **to be able to log in with Slack** so that **I can access my groups**.
 * As a **user** I want **to be able to participate without logging in** so that **I can try out the service first**.
 
-## Version History
+## Version History!
 
 #### v0.1.3
 
