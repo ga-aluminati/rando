@@ -15,6 +15,8 @@ This project does not put into practice [TDD](https://en.wikipedia.org/wiki/Test
 * As an **organizer** I want **to require a user to log in** so that **I can know who they are**.
 * As an **organizer** I want **to control how many people are matched in a group** so that **I can accomodate any type of activity regardless of size**.
 * As an **organizer** I want **to be able to create exclusions to who gets matched** so that **people like spouses will be guaranteed to be matched with someone different**.
+* As an **organizer** I want **to set a deadline** so that **users know when they have to join by**.
+* As an **organizer** I want **the match to automatically occur when the deadline is reached** so that **I don't have to manually do it**.
 * As an **organizer** I want **to prevent duplicate matches** so that **people get to work with someone new**.
 * As an **organizer** I want **to provide an invite link** so that **users can view and join the event with it**.
 * As an **organizer** I want **to display a count down** so that **people can see when the match will occur**.
