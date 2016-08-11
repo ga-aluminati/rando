@@ -12,7 +12,7 @@ This project does not put into practice [TDD](https://en.wikipedia.org/wiki/Test
 
 * As an **organizer** I want **to match members randomly** so that **everyone has someone to participate with**.
 * As an **organizer** I want **to allow people to participate without logging in** so that **I can get events going as fast as possible**.
-* As an **organizer** I want **to be able to force a user to log in** so that **I can know who they are**.
+* As an **organizer** I want **to require a user to log in** so that **I can know who they are**.
 * As an **organizer** I want **to control how many people are matched in a group** so that **I can accomodate any type of activity regardless of size**.
 * As an **organizer** I want **to be able to create exclusions to who gets matched** so that **people like spouses will be guaranteed to be matched with someone different**.
 * As an **organizer** I want **to prevent duplicate matches** so that **people get to work with someone new**.
