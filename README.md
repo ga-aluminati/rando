@@ -11,8 +11,6 @@ This project does not put into practice [TDD](https://en.wikipedia.org/wiki/Test
 > As a **(role)** I want **(something)** so that **(benefit)**.
 
 * As an **event organizer** I want **to match members randomly** so that **everyone has someone to participate with**.
-* As a **user** I want **to be able to log in with Facebook** so that **I don't have to remember another password**.
-* As a **user** I want **to be able to participate without logging in** so that **I can try out the service**.
 * As an **event organizer** I want **to allow people to participate without logging in** so that **I can get events going as fast as possible**.
 * As an **event organizer** I want **to be able to force a user to log in** so that **I can know who they are**.
 * As an **event organizer** I want **to display a count down** so that **people can see when the match will occur**.
@@ -20,6 +18,9 @@ This project does not put into practice [TDD](https://en.wikipedia.org/wiki/Test
 * As an **event organizer** I want **to be able to create exclusions to who gets matched** so that **people like spouses will be guaranteed to be matched with someone different**.
 * As an **event organizer** I want **to prevent duplicate matches** so that **people get to work with someone new**.
 * As a **user** I want **to see my match history** so that **I can see who I worked with before**.
+* As a **user** I want **to be able to log in with Facebook** so that **I can access my friends**.
+* As a **user** I want **to be able to log in with Slack** so that **I can access my groups**.
+* As a **user** I want **to be able to participate without logging in** so that **I can try out the service first**.
 
 ## Version History
 
