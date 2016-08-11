@@ -17,6 +17,9 @@ This project does not put into practice [TDD](https://en.wikipedia.org/wiki/Test
 * As an **event organizer** I want **to be able to force a user to log in** so that **I can know who they are**.
 * As an **event organizer** I want **to display a count down** so that **people can see when the match will occur**.
 * As an **event organizer** I want **to control how many people are matched in a group** so that **I can accomodate any type of activity regardless of size**.
+* As an **event organizer** I want **to be able to create exclusions to who gets matched** so that **people like spouses will be guaranteed to be matched with someone different**.
+* As an **event organizer** I want **to prevent duplicate matches** so that **people get to work with someone new**.
+* As a **user** I want **to see my match history** so that **I can see who I worked with before**.
 
 ## Version History
 
