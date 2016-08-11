@@ -22,7 +22,6 @@ This project does not put into practice [TDD](https://en.wikipedia.org/wiki/Test
 * As an **organizer** I want **to display a count down** so that **people can see when the match will occur**.
 * As an **organizer** I want **to display a code on screen** so that **people can join without a link**.
 * As an **organizer** I want **to create private event** so that **only users with the link can view and join it**.
-
 * As a **user** I want **to see my match history** so that **I can see who I worked with before**.
 * As a **user** I want **to be able to log in with Facebook** so that **I can access my friends**.
 * As a **user** I want **to be able to log in with Slack** so that **I can access my groups**.
