@@ -6,6 +6,12 @@ The **ultimate** person randomizer.
 
 This project does not put into practice [TDD](https://en.wikipedia.org/wiki/Test-driven_development), but it does have plenty of **FDD** (Fad Driven Development). Have you ever wondered how many technologies can be successfully squeezed into a single side project? We're about to find out. 
 
+## ERD 
+
+
+
+Source: https://www.draw.io 
+
 ## User Stories
 
 > As a **(role)** I want **(something)** so that **(benefit)**.
