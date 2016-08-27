@@ -14,7 +14,7 @@ This project does not put into practice [TDD](https://en.wikipedia.org/wiki/Test
 
 ## Flowcharts
 
-[!./randomizer_organizer_flow.png](./randomizer_organizer_flow.png)
+![./randomizer_organizer_flow.png](./randomizer_organizer_flow.png)
 
 ## User Stories
 
