@@ -10,7 +10,7 @@ This project does not put into practice [TDD](https://en.wikipedia.org/wiki/Test
 
 1. Randomize a single list of users 
 2. Generate random groups of users 
-3. Users will be able to join and particpate effortlessly
+3. Allow users to join and participate effortlessly
 
 ## User Stories
 
