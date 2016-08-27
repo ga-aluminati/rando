@@ -14,24 +14,26 @@ This project does not put into practice [TDD](https://en.wikipedia.org/wiki/Test
 
 ## User Stories
 
-> As a **(role)** I want **(something)** so that **(benefit)**.
+> As a **(role)** I want **(something)** so that I can **(benefit)**.
 
-* As an **organizer** I want **to match members randomly** so that **everyone has someone to participate with**.
-* As an **organizer** I want **to allow people to participate without logging in** so that **I can get events going as fast as possible**.
-* As an **organizer** I want **to require a user to log in** so that **I can know who they are**.
-* As an **organizer** I want **to control how many people are matched in a group** so that **I can accomodate any type of activity regardless of size**.
-* As an **organizer** I want **to be able to create exclusions to who gets matched** so that **people like spouses will be guaranteed to be matched with someone different**.
-* As an **organizer** I want **to set a deadline** so that **users know when they have to join by**.
-* As an **organizer** I want **the match to automatically occur when the deadline is reached** so that **I don't have to manually do it**.
-* As an **organizer** I want **to prevent duplicate matches** so that **people get to work with someone new**.
-* As an **organizer** I want **to provide an invite link** so that **users can view and join the event with it**.
-* As an **organizer** I want **to display a count down** so that **people can see when the match will occur**.
-* As an **organizer** I want **to display a code on screen** so that **people can join without a link**.
-* As an **organizer** I want **to create private event** so that **only users with the link can view and join it**.
-* As a **user** I want **to see my match history** so that **I can see who I worked with before**.
-* As a **user** I want **to be able to log in with Facebook** so that **I can access my friends**.
-* As a **user** I want **to be able to log in with Slack** so that **I can access my groups**.
-* As a **user** I want **to be able to participate without logging in** so that **I can try out the service first**.
+* As an **organizer** I want **to randomize a set of users** so that I can **ensure the order of users is fair**.
+* As an **organizer** I want **to match group members randomly** so that I can **ensure everyone at the event has someone to work with**.
+* As an **organizer** I want **to allow people to participate without logging in** so that I can **get events going as quickly and effortlessly as possible**.
+* As an **organizer** I want **to be able to require a user to log in** so that I can **I can know who they are**.
+* As an **organizer** I want **to control how many people are matched in a group** so that I can **I can accomodate any type of activity regardless of size**.
+* As an **organizer** I want **to control how many groups are generated** so that I can **control the final number of groups**.
+* As an **organizer** I want **to be able to create exclusions to who gets matched** so that I can **ensure people like spouses will be matched with someone different**.
+* As an **organizer** I want **to set a deadline** so that I can **let users know how long they have to join the event**.
+* As an **organizer** I want **the match to automatically occur when the deadline is reached** so that I can **do other things without waiting**.
+* As an **organizer** I want **to prevent duplicate matches** so that I can **ensure users get to work with someone new**.
+* As an **organizer** I want **to provide an invite link** so that I can **allow users to view and join the event with one click**.
+* As an **organizer** I want **to display a count down** so that I can **display to a large group how much time is remaining until the match occurs**.
+* As an **organizer** I want **to display a code on screen** so that I can **allow users to join without a link**.
+* As an **organizer** I want **to create private events** so that I can **ensure only users with the link can view and join it**.
+* As a **user** I want **to see my match history** so that I can **see who I worked with before**.
+* As a **user** I want **to be able to log in with Facebook** so that I can **access my friends**.
+* As a **user** I want **to be able to log in with Slack** so that I can **access my groups**.
+* As a **user** I want **to be able to participate without logging in** so that I can **try out the service first**.
 
 ## Version History
 
