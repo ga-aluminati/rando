@@ -12,6 +12,10 @@ This project does not put into practice [TDD](https://en.wikipedia.org/wiki/Test
 * Generate random groups of users 
 * Allow users to join and participate effortlessly
 
+## Flowcharts
+
+[!./randomizer_organizer_flow.png](./randomizer_organizer_flow.png)
+
 ## User Stories
 
 > As a **(role)** I want **(something)** so that I can **(benefit)**.
