@@ -8,9 +8,9 @@ This project does not put into practice [TDD](https://en.wikipedia.org/wiki/Test
 
 ## Core Functionality
 
-1. Randomize a single list of users 
-2. Generate random groups of users 
-3. Allow users to join and participate effortlessly
+* Randomize a single list of users 
+* Generate random groups of users 
+* Allow users to join and participate effortlessly
 
 ## User Stories
 
