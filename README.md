@@ -8,6 +8,12 @@ This project does not put into practice [TDD](https://en.wikipedia.org/wiki/Test
 
 ## User Stories
 
+#### Top 3 things a user will do on this site
+
+1. Randomize a single list of users 
+2. Generate random groups of users 
+3. Users will be able to join and particpate effortlessly
+
 > As a **(role)** I want **(something)** so that **(benefit)**.
 
 * As an **organizer** I want **to match members randomly** so that **everyone has someone to participate with**.
@@ -26,12 +32,6 @@ This project does not put into practice [TDD](https://en.wikipedia.org/wiki/Test
 * As a **user** I want **to be able to log in with Facebook** so that **I can access my friends**.
 * As a **user** I want **to be able to log in with Slack** so that **I can access my groups**.
 * As a **user** I want **to be able to participate without logging in** so that **I can try out the service first**.
-
-Top 3 things a user will need to be able to do on this site: 
-
-1. Randomize a list of users 
-2. Organizers can generate groups of users 
-3. Users will be able to particpate effortlessly
 
 ## Version History
 
