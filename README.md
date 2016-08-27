@@ -6,13 +6,13 @@ The **ultimate** person randomizer.
 
 This project does not put into practice [TDD](https://en.wikipedia.org/wiki/Test-driven_development), but it does have plenty of **FDD** (Fad Driven Development). Have you ever wondered how many technologies can be successfully squeezed into a single side project? We're about to find out. 
 
-## User Stories
-
-#### Top 3 things a user will do on this site
+## Top 3 User Goals
 
 1. Randomize a single list of users 
 2. Generate random groups of users 
 3. Users will be able to join and particpate effortlessly
+
+## User Stories
 
 > As a **(role)** I want **(something)** so that **(benefit)**.
 
