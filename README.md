@@ -16,21 +16,21 @@ This project does not put into practice [TDD](https://en.wikipedia.org/wiki/Test
 
 ![./randomizer_organizer_flow.png](./randomizer_organizer_flow.png)
 
-## Static Files
+## Core Display States
 
-* Landing page
+* **Landing page**
  - Randomize list of users
  - Randomize groups of users
  - Allow anyone at an event to join 
  - Public or private 
-* Dashboard
+* **Dashboard**
  - View all events you created
  - View all events you are participating in
  - CTA: Create a new event
-* Event creation
+* **Event creation**
  - Invite link
  - CTA: Save event
-* Event display
+* **Event display**
  - Organizer: Add members manually
  - Autodraw: Countdown
  - Show participants
