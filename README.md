@@ -10,11 +10,31 @@ This project does not put into practice [TDD](https://en.wikipedia.org/wiki/Test
 
 * Randomize a single list of users 
 * Generate random groups of users 
-* Allow users to join and participate effortlessly
+* Allow users to join and participate without having to log in or create an account
 
 ## Flowcharts
 
 ![./randomizer_organizer_flow.png](./randomizer_organizer_flow.png)
+
+## Static Files
+
+* Landing page
+ - Randomize list of users
+ - Randomize groups of users
+ - Allow anyone at an event to join 
+ - Public or private 
+* Dashboard
+ - View all events you created
+ - View all events you are participating in
+ - CTA: Create a new event
+* Event creation
+ - Invite link
+ - CTA: Save event
+* Event display
+ - Organizer: Add members manually
+ - Autodraw: Countdown
+ - Show participants
+ - CTA: Draw random matches
 
 ## User Stories
 
