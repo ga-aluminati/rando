@@ -16,13 +16,13 @@ This project does not put into practice [TDD](https://en.wikipedia.org/wiki/Test
 
 ![./randomizer_organizer_flow.png](./randomizer_organizer_flow.png)
 
-## Core Display States
+## Display States
 
 * **Landing page**
- - Randomize list of users
- - Randomize groups of users
- - Allow anyone at an event to join 
- - Public or private 
+ - Value Prop: Randomize list of users
+ - Value Prop: Randomize groups of users
+ - Value Prop: Allow anyone at an event to join 
+ - Value Prop: Public or private 
 * **Dashboard**
  - View all events you created
  - View all events you are participating in
