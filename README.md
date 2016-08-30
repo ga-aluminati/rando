@@ -34,7 +34,7 @@ This project does not put into practice [TDD](https://en.wikipedia.org/wiki/Test
  - Organizer: Add members manually
  - Autodraw: Countdown
  - Show participants
- - CTA: Draw random matches
+ - CTA: Draw
 
 ## User Stories
 
