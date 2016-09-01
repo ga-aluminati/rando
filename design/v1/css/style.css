@@ -5,6 +5,7 @@
   font-weight: normal;
   font-style: normal;
 }*/
+@import 'https://fonts.googleapis.com/css?family=Roboto|Lato|Oswald';
 /* =======================================================
 *
 * 	Template Style
@@ -14,7 +15,7 @@
 body {
   font-family: "Roboto", Arial, serif;
   line-height: 1.8;
-  font-size: 20px;
+  font-size: 2.1rem;
   background: #f8f8f8;
   font-weight: 300;
   overflow-x: hidden;
@@ -53,20 +54,20 @@ a:focus, a:active {
 
 p, span {
   margin-bottom: 1em;
-  font-size: 18px;
+  font-size: 2.1rem;
   color: #727272;
   font-weight: 300;
   font-family: "Roboto", Arial, serif;
 }
 
 span {
-  font-size: 18px;
+  font-size: 2.1rem;
   color: rgba(114, 114, 114, 0.8);
 }
 
 h1, h2, h3, h4, h5, h6 {
   color: rgba(0, 0, 0, 0.8);
-  font-family: "Roboto Slab", Arial, sans-serif;
+  font-family: "Oswald", Arial, sans-serif;
   font-weight: 300;
   margin: 7px 0 0 0;
 }
@@ -264,7 +265,8 @@ h1 {
   transition: 0.3s;
 }
 .btn.btn-primary {
-  background: #FA7E0A;
+  /*background: #FA7E0A;*/
+  background: tomato;
   color: #fff;
   border: none !important;
   border: 2px solid transparent !important;
@@ -443,53 +445,23 @@ header .fh5co-navbar-brand .fh5co-logo:active, header .fh5co-navbar-brand .fh5co
 
 #fh5co-intro-section {
   /*margin-bottom: 2em;*/
-  padding-bottom: .7em;
+  padding-bottom: .4em;
 }
 
 .intro-heading {
-  font-size: 1.4em;
+  font-size: 3.7rem;
   font-weight: 300;
   line-height: 1.5;
+  color: #333;
 }
 @media screen and (max-width: 768px) {
   .intro-heading {
-    font-size: 30px;
+    font-size: 2.8rem;
   }
 }
 
 .ri-grid ul li {
   background: transparent !important;
-}
-.ri-grid ul li a .desc {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  text-align: center;
-  background: rgba(250, 126, 10, 0.8);
-  opacity: 0;
-  padding-top: 35%;
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
-}
-.ri-grid ul li a .desc h3 {
-  font-size: 20px;
-  color: white;
-  text-decoration: none;
-  -webkit-transition: 0.6s;
-  -o-transition: 0.6s;
-  transition: 0.6s;
-}
-.ri-grid ul li a .desc h3 span {
-  color: rgba(255, 255, 255, 0.7);
-  font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
-.ri-grid ul li a:hover .desc, .ri-grid ul li a:focus .desc {
-  opacity: 1;
 }
 .ri-grid ul li a:hover img, .ri-grid ul li a:focus img {
   -webkit-transform: scale(1);
@@ -799,31 +771,47 @@ input[type="text"] {
   color: #333;
 }
 .participants-sidebar {
-  padding: 0 0 0 34px;
+  padding: 0 0 0 64px;
 }
 .participants-header {
-  padding: 0 0 24px 0;
+  padding: 0 0 18px 0;
+  font-family: "Oswald", helvetica, sans-serif;
+  color: #333;
 }
 
-.participants .carousel-info img {
+.participants .participant img {
     border: 1px solid #f5f5f5;
     border-radius: 120px !important;
     height: 60px;
     padding: 3px;
     width: 60px;
 }
-.participants .carousel-info {
+.participants .participant {
     overflow: hidden;
 }
-.participants .carousel-info img {
+.participants .participant img {
     margin-right: 15px;
 }
-.participants .carousel-info span {
+.participants .participant span {
     display: block;
-    color: #FA7E0A;
-    font-size: 16px;
+    color: #333;
+    font-size: 1.8rem;
     font-weight: 300;
     margin: 15px 0 7px;
+    /*font-family: 'Oswald', sans-serif;*/
+}
+
+.participants .item {
+  padding: 5px 8px;
+  margin-bottom: 7px;
+  border-radius: 10px;
+  background: #f2f2f2
+}
+.participants .active {
+  background: tomato;
+}
+.participants .active .participant span {
+  color: white;
 }
 
 
