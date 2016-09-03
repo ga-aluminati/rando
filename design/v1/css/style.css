@@ -8,7 +8,7 @@ body {
   font-weight: 300;
   overflow-x: hidden;
 }
-body.menu-show {
+body.menu-show, body.draw-show, body.result-show {
   overflow: hidden;
   position: fixed;
   height: 100%;
@@ -92,7 +92,7 @@ h1 {
   transform: scale(1);
   background: #f8f8f8;
 }
-.menu-show #fh5co-page {
+.menu-show #fh5co-page, .draw-show #fh5co-page, .result-show #fh5co-page {
   -webkit-transform: scale(0.9);
   -moz-transform: scale(0.9);
   -ms-transform: scale(0.9);
@@ -100,7 +100,7 @@ h1 {
   transform: scale(0.9);
 }
 
-#fh5co-main-nav {
+#fh5co-main-nav, #fh5co-draw-window, #fh5co-result-window {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -125,7 +125,7 @@ h1 {
   transform: scale(0);
   overflow-y: scroll;
 }
-#fh5co-main-nav .fh5co-nav-toggle {
+#fh5co-main-nav .fh5co-nav-toggle, #fh5co-draw-window .fh5co-draw-toggle, #fh5co-result-window .fh5co-result-toggle {
   position: absolute;
   top: 30px;
   right: 30px;
@@ -145,10 +145,10 @@ h1 {
   -o-transition: 0.3s;
   transition: 0.3s;
 }
-#fh5co-main-nav .fh5co-nav-toggle:hover {
+#fh5co-main-nav .fh5co-nav-toggle:hover, #fh5co-draw-window .fh5co-draw-toggle:hover, #fh5co-result-window .fh5co-result-toggle:hover {
   background: rgba(0, 0, 0, 0.7);
 }
-#fh5co-main-nav .fh5co-nav-toggle i {
+#fh5co-main-nav .fh5co-nav-toggle i, #fh5co-draw-window .fh5co-draw-toggle i, #fh5co-result-window .fh5co-result-toggle i {
   top: 19px !important;
   left: 0 !important;
   margin: 0 !important;
@@ -156,11 +156,11 @@ h1 {
   line-height: 0;
   text-indent: 0;
 }
-#fh5co-main-nav .fh5co-nav-toggle.show {
+#fh5co-main-nav .fh5co-nav-toggle.show, #fh5co-draw-window .fh5co-draw-toggle.show, #fh5co-result-window .fh5co-result-toggle.show {
   visibility: visible;
   opacity: 1;
 }
-.menu-show #fh5co-main-nav {
+.menu-show #fh5co-main-nav, .draw-show #fh5co-draw-window, .result-show #fh5co-result-window {
   visibility: visible;
   opacity: 1;
   -webkit-transform: scale(1);
@@ -236,6 +236,10 @@ h1 {
   height: 100%;
   display: table-cell;
   vertical-align: middle;
+}
+.fh5co-table .fh5co-table-cell h2 {
+  color: white;
+  margin-bottom: 24px;
 }
 @media screen and (max-width: 768px) {
   .fh5co-table .fh5co-table-cell {
@@ -315,17 +319,23 @@ header .fh5co-navbar-brand .fh5co-logo:active, header .fh5co-navbar-brand .fh5co
   top: 0;
   right: 0;
 }
-.fh5co-nav-toggle.active i::before, .fh5co-nav-toggle.active i::after {
+.fh5co-nav-toggle.active i::before, .fh5co-nav-toggle.active i::after,
+.fh5co-draw-toggle.active i::before, .fh5co-draw-toggle.active i::after,
+.fh5co-result-toggle.active i::before, .fh5co-result-toggle.active i::after {
   background: #fff;
 }
-.fh5co-nav-toggle.dark.active i::before, .fh5co-nav-toggle.dark.active i::after {
+.fh5co-nav-toggle.dark.active i::before, .fh5co-nav-toggle.dark.active i::after,
+.fh5co-draw-toggle.dark.active i::before, .fh5co-draw-toggle.dark.active i::after,
+.fh5co-result-toggle.dark.active i::before, .fh5co-result-toggle.dark.active i::after {
   background: #fff;
 }
-.fh5co-nav-toggle:hover, .fh5co-nav-toggle:focus, .fh5co-nav-toggle:active {
+.fh5co-nav-toggle:hover, .fh5co-nav-toggle:focus, .fh5co-nav-toggle:active,
+.fh5co-draw-toggle:hover, .fh5co-draw-toggle:focus, .fh5co-draw-toggle:active,
+.fh5co-result-toggle:hover, .fh5co-result-toggle:focus, .fh5co-result-toggle:active {
   outline: none;
   border-bottom: none !important;
 }
-.fh5co-nav-toggle i {
+.fh5co-nav-toggle i, .fh5co-draw-toggle i, .fh5co-result-toggle i {
   position: relative;
   display: -moz-inline-stack;
   display: inline-block;
@@ -340,11 +350,13 @@ header .fh5co-navbar-brand .fh5co-logo:active, header .fh5co-navbar-brand .fh5co
   background: #000;
   transition: all .2s ease-out;
 }
-.menu-show .fh5co-nav-toggle i {
+.menu-show .fh5co-nav-toggle i, .draw-show .fh5co-draw-toggle i, .result-show .fh5co-result-toggle i {
   background: #fff;
   color: #fff;
 }
-.fh5co-nav-toggle i::before, .fh5co-nav-toggle i::after {
+.fh5co-nav-toggle i::before, .fh5co-nav-toggle i::after,
+.fh5co-draw-toggle i::before, .fh5co-draw-toggle i::after,
+.fh5co-result-toggle i::before, .fh5co-result-toggle i::after {
   content: '';
   width: 30px;
   height: 2px;
@@ -355,43 +367,61 @@ header .fh5co-navbar-brand .fh5co-logo:active, header .fh5co-navbar-brand .fh5co
   -o-transition: 0.2s;
   transition: 0.2s;
 }
-.menu-show .fh5co-nav-toggle i::before, .menu-show .fh5co-nav-toggle i::after {
+.menu-show .fh5co-nav-toggle i::before, .menu-show .fh5co-nav-toggle i::after,
+.draw-show .fh5co-draw-toggle i::before, .draw-show .fh5co-draw-toggle i::after,
+.result-show .fh5co-result-toggle i::before, .result-show .fh5co-result-toggle i::after {
   background: #fff;
 }
-.fh5co-nav-toggle.dark i {
+.fh5co-nav-toggle.dark i,
+.fh5co-draw-toggle.dark i,
+.fh5co-result-toggle.dark i {
   position: relative;
   color: #000;
   background: #000;
   transition: all .2s ease-out;
 }
-.fh5co-nav-toggle.dark i::before, .fh5co-nav-toggle.dark i::after {
+.fh5co-nav-toggle.dark i::before, .fh5co-nav-toggle.dark i::after,
+.fh5co-draw-toggle.dark i::before, .fh5co-draw-toggle.dark i::after,
+.fh5co-result-toggle.dark i::before, .fh5co-result-toggle.dark i::after {
   background: #000;
   -webkit-transition: 0.2s;
   -o-transition: 0.2s;
   transition: 0.2s;
 }
 
-.fh5co-nav-toggle i::before {
+.fh5co-nav-toggle i::before,
+.fh5co-draw-toggle i::before,
+.fh5co-result-toggle i::before {
   top: -7px;
 }
 
-.fh5co-nav-toggle i::after {
+.fh5co-nav-toggle i::after,
+.fh5co-draw-toggle i::after,
+.fh5co-result-toggle i::after {
   bottom: -7px;
 }
 
-.fh5co-nav-toggle:hover i::before {
+.fh5co-nav-toggle:hover i::before,
+.fh5co-draw-toggle:hover i::before,
+.fh5co-result-toggle:hover i::before {
   top: -10px;
 }
 
-.fh5co-nav-toggle:hover i::after {
+.fh5co-nav-toggle:hover i::after,
+.fh5co-draw-toggle:hover i::after,
+.fh5co-result-toggle:hover i::after {
   bottom: -10px;
 }
 
-.fh5co-nav-toggle.active i {
+.fh5co-nav-toggle.active i,
+.fh5co-draw-toggle.active i,
+.fh5co-result-toggle.active i {
   background: transparent;
 }
 
-.fh5co-nav-toggle.active i::before {
+.fh5co-nav-toggle.active i::before,
+.fh5co-draw-toggle.active i::before,
+.fh5co-result-toggle.active i::before {
   top: 0;
   -webkit-transform: rotateZ(45deg);
   -moz-transform: rotateZ(45deg);
@@ -400,7 +430,9 @@ header .fh5co-navbar-brand .fh5co-logo:active, header .fh5co-navbar-brand .fh5co
   transform: rotateZ(45deg);
 }
 
-.fh5co-nav-toggle.active i::after {
+.fh5co-nav-toggle.active i::after,
+.fh5co-draw-toggle.active i::after,
+.fh5co-result-toggle.active i::after {
   bottom: 0;
   -webkit-transform: rotateZ(-45deg);
   -moz-transform: rotateZ(-45deg);
@@ -409,7 +441,7 @@ header .fh5co-navbar-brand .fh5co-logo:active, header .fh5co-navbar-brand .fh5co
   transform: rotateZ(-45deg);
 }
 
-.fh5co-nav-toggle {
+.fh5co-nav-toggle, .fh5co-draw-toggle, .fh5co-result-toggle {
   float: right;
   z-index: 1003;
   position: relative;
@@ -419,7 +451,7 @@ header .fh5co-navbar-brand .fh5co-logo:active, header .fh5co-navbar-brand .fh5co
   margin-top: 0px;
 }
 @media screen and (max-width: 768px) {
-  .fh5co-nav-toggle {
+  .fh5co-nav-toggle, .fh5co-draw-toggle, .fh5co-result-toggle {
     display: block;
     top: 0px;
   }
@@ -593,7 +625,7 @@ input[type="text"] {
 .participants-header {
   padding: 0 0 18px 0;
   font-family: "Oswald", helvetica, sans-serif;
-  color: #333;
+  color: #727272;
 }
 
 .participants .participant img {
@@ -631,6 +663,42 @@ input[type="text"] {
   color: white;
 }
 
+#fh5co-result-window .fh5co-table-cell .participants {
+  clear: both;
+  padding: 1em 3em .5em;
+}
+
+#fh5co-result-window .fh5co-table-cell h2 {
+  clear: both;
+  padding-top: .5em;
+}
+
+#fh5co-result-window .participants .item {
+  width: 300px;
+  float: left;
+  margin-left: 15px;
+}
+
+#fh5co-result-window span.placement {
+  font-size: 160%;
+  color: #fff;
+  padding: 5px 8px;
+  background: tomato;
+  margin-right: 5px;
+  border-radius: 10px;
+}
+
+#fh5co-result-window .single-match .participants {
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 0;
+}
+#fh5co-result-window .single-match .participants .item {
+  float: none;
+  margin-left: 0;
+  margin-top: 1.5em;
+}
+
 .page-alerts {
     margin-bottom: 20px;
 }
@@ -639,4 +707,11 @@ input[type="text"] {
     border-radius: 0;
     margin-bottom: 0;
 }
+
+#fh5co-result-window p {
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+
 /*# sourceMappingURL=style.css.map */

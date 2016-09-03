@@ -25,10 +25,6 @@
 
   <!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css">
-	<!-- Icomoon Icon Fonts-->
-	<!-- <link rel="stylesheet" href="css/icomoon.css"> -->
-	<!-- Bootstrap  -->
-	<!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
 	<!-- animatedresponsiveImagegrid  -->
 	<link rel="stylesheet" href="css/animatedresponsiveImagegrid.css">
 	<!-- Magnifoc Popup  -->
@@ -46,7 +42,7 @@
 </head>
 <body>
 
-  <nav id="fh5co-main-nav" role="navigation">
+  <!-- <nav id="fh5co-main-nav" role="navigation">
     <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle active"><i></i></a>
     <div class="js-fullheight fh5co-table">
       <div class="fh5co-table-cell js-fullheight">
@@ -59,7 +55,98 @@
         </ul>
       </div>
     </div>
-  </nav>
+  </nav> -->
+
+  <section id="fh5co-draw-window">
+    <a href="#" class="js-fh5co-draw-toggle fh5co-draw-toggle active"><i></i></a>
+    <div class="js-fullheight fh5co-table">
+      <div class="fh5co-table-cell js-fullheight">
+
+        <h2>Drawing has taken place</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, ab delectus voluptates. Consequuntur officiis laboriosam placeat ut provident rem minima quibusdam error odio quia dolore, sit repellat maxime quos sequi.</p>
+
+        <p></p>
+        <p></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="fh5co-result-window">
+    <a href="#" class="js-fh5co-result-toggle fh5co-result-toggle active"><i></i></a>
+    <div class="js-fullheight fh5co-table">
+      <div class="fh5co-table-cell js-fullheight textcenter">
+
+        <h2>You've been matched with <strong>Jane Doe</strong>!</h2>
+
+        <div class="single-match">
+          <div class="participants">
+            <div class="active item">
+              <div class="participant">
+                <img alt="" src="http://keenthemes.com/assets/bootsnipp/img1-small.jpg" class="pull-left">
+                <div class="pull-left">
+                  <span>Jane Doe</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h2>Here's your group!</h2>
+
+        <div class="participants">
+          <div class="active item">
+            <div class="participant">
+              <img alt="" src="http://keenthemes.com/assets/bootsnipp/img1-small.jpg" class="pull-left">
+              <div class="pull-left">
+                <span>Lina Mars</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="active item">
+            <div class="participant">
+              <img alt="" src="http://keenthemes.com/assets/bootsnipp/img1-small.jpg" class="pull-left">
+              <div class="pull-left">
+                <span>Lina Mars</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="active item">
+            <div class="participant">
+              <img alt="" src="http://keenthemes.com/assets/bootsnipp/img1-small.jpg" class="pull-left">
+              <div class="pull-left">
+                <span>Lina Mars</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="active item">
+            <div class="participant">
+              <img alt="" src="http://keenthemes.com/assets/bootsnipp/img1-small.jpg" class="pull-left">
+              <div class="pull-left">
+                <span>Lina Mars</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="active item">
+            <div class="participant">
+              <img alt="" src="http://keenthemes.com/assets/bootsnipp/img1-small.jpg" class="pull-left">
+              <div class="pull-left">
+                <span>Lina Mars</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h2>You're number <span class="placement">9</span>!</h2>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, ab delectus voluptates. Consequuntur officiis laboriosam placeat ut provident rem minima quibusdam error odio quia dolore, sit repellat maxime quos sequi.</p>
+
+      </div>
+    </div>
+  </section>
 
   <div class="page-alerts">
     <!-- <div class="alert alert-success page-alert" id="alert-1">
@@ -70,7 +157,7 @@
         <button type="button" class="close"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
         Go to <strong>randomize.co</strong> and use code <strong>2551</strong> to join
     </div>
-<!--
+    <!--
     <div class="alert alert-warning page-alert" id="alert-3">
         <button type="button" class="close"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
         <strong>Warning!</strong> Best check yo self, you're not looking too good.
@@ -94,10 +181,10 @@
           <div class="right-menu">
             <ul>
               <li><a href="#"><i class="fa fa-user-plus menu-secondary" aria-hidden="true"></i></a></li>
-              <li><button class="btn btn-primary" type="submit">Join</button></li>
-              <li><button class="btn btn-secondary" type="submit"><i class="fa fa-check-circle" aria-hidden="true"></i> Joined</button></li>
-              <li><button class="btn btn-primary" type="submit">Draw</button></li>
-              <li><button class="btn btn-secondary" type="submit"><i class="fa fa-check-circle" aria-hidden="true"></i> Drawn</button></li>
+              <li><button class="btn btn-primary">Join</button></li>
+              <li><button class="btn btn-secondary"><i class="fa fa-check-circle" aria-hidden="true"></i> Joined</button></li>
+              <li><button class="btn btn-primary js-fh5co-draw-toggle">Draw</button></li>
+              <li><button class="btn btn-secondary js-fh5co-result-toggle"><i class="fa fa-check-circle" aria-hidden="true"></i> Drawn</button></li>
             </ul>
           </div>
         </div>
@@ -208,12 +295,12 @@
                       <img src="images/pic17.jpg"/>
                     </a>
                   </li>
-                  <li>
+                  <!-- <li>
                     <a href="#">
                       <img src="images/pic18.jpg"/>
                     </a>
-                  </li>
-                  <li>
+                  </li> -->
+                  <!-- <li>
                     <a href="#">
                       <img src="images/pic19.jpg"/>
                     </a>
@@ -242,7 +329,7 @@
                     <a href="#">
                       <img src="images/pic24.jpg"/>
                     </a>
-                  </li>
+                  </li> -->
                 </ul>
               </div>
           </div>
@@ -251,7 +338,6 @@
         <div class="col-xl-4 col-lg-4 col-md-4 participants-sidebar">
           <div class="participants-header">17 participants</div>
 
-          <!-- <div class="container"> -->
             <div class="row">
               <div class="participants">
               	<div class="active item">
@@ -288,22 +374,9 @@
                   </div>
               </div>
             </div>
-
-          <!-- </div> -->
-
         </div>
-
       </div>
     </div>
-
-
-
-
-
-
-
-
-
   </div>
 
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>

@@ -5,16 +5,16 @@
 
 
 	// iPad and iPod detection
-	var isiPad = function(){
-		return (navigator.platform.indexOf("iPad") != -1);
-	};
-
-	var isiPhone = function(){
-	    return (
-			(navigator.platform.indexOf("iPhone") != -1) ||
-			(navigator.platform.indexOf("iPod") != -1)
-	    );
-	};
+	// var isiPad = function(){
+	// 	return (navigator.platform.indexOf("iPad") != -1);
+	// };
+	//
+	// var isiPhone = function(){
+	//     return (
+	// 		(navigator.platform.indexOf("iPhone") != -1) ||
+	// 		(navigator.platform.indexOf("iPod") != -1)
+	//     );
+	// };
 
 
 	var fullHeight = function() {
@@ -26,18 +26,42 @@
 
 	};
 
-	var burgerMenu = function() {
+	var drawModal = function() {
 
-		$('.js-fh5co-nav-toggle').on('click', function(event) {
+		$('.js-fh5co-draw-toggle').on('click', function(event) {
+			event.preventDefault();
+			console.log('event', event);
+			var $this = $(this);
+			if( $('body').hasClass('draw-show') ) {
+				$('body').removeClass('draw-show');
+				$('#fh5co-draw-window > .js-fh5co-draw-toggle').removeClass('show');
+			} else {
+				$('body').addClass('draw-show');
+				setTimeout(function(){
+					$('#fh5co-draw-window > .js-fh5co-draw-toggle').addClass('show');
+				}, 900);
+
+
+				// $('body').addClass('menu-show');
+				// setTimeout(function(){
+				// 	$('#fh5co-main-nav > .js-fh5co-nav-toggle').addClass('show');
+				// }, 900);
+			}
+		})
+	};
+
+	var resultModal = function() {
+
+		$('.js-fh5co-result-toggle').on('click', function(event) {
 			event.preventDefault();
 			var $this = $(this);
-			if( $('body').hasClass('menu-show') ) {
-				$('body').removeClass('menu-show');
-				$('#fh5co-main-nav > .js-fh5co-nav-toggle').removeClass('show');
+			if( $('body').hasClass('result-show') ) {
+				$('body').removeClass('result-show');
+				$('#fh5co-result-window > .js-fh5co-result-toggle').removeClass('show');
 			} else {
-				$('body').addClass('menu-show');
+				$('body').addClass('result-show');
 				setTimeout(function(){
-					$('#fh5co-main-nav > .js-fh5co-nav-toggle').addClass('show');
+					$('#fh5co-result-window > .js-fh5co-result-toggle').addClass('show');
 				}, 900);
 			}
 		})
@@ -76,55 +100,56 @@
 
 		} , { offset: '85%' } );
 	};
+	//
+	// var counter = function() {
+	// 	$('.js-counter').countTo({
+	// 		formatter: function (value, options) {
+	//       	return value.toFixed(options.decimals);
+	//     	}
+	// 	});
+	// };
 
-	var counter = function() {
-		$('.js-counter').countTo({
-			formatter: function (value, options) {
-	      	return value.toFixed(options.decimals);
-	    	}
-		});
-	};
-
-	var counterWayPoint = function() {
-		if ($('#counter-animate').length > 0 ) {
-			$('#counter-animate').waypoint( function( direction ) {
-
-				if( direction === 'down' && !$(this.element).hasClass('animated') ) {
-					setTimeout( counter , 400);
-					$(this.element).addClass('animated');
-
-				}
-			} , { offset: '90%' } );
-		}
-	};
-
-
-	var imgPopup = function() {
+	// var counterWayPoint = function() {
+	// 	if ($('#counter-animate').length > 0 ) {
+	// 		$('#counter-animate').waypoint( function( direction ) {
+	//
+	// 			if( direction === 'down' && !$(this.element).hasClass('animated') ) {
+	// 				setTimeout( counter , 400);
+	// 				$(this.element).addClass('animated');
+	//
+	// 			}
+	// 		} , { offset: '90%' } );
+	// 	}
+	// };
 
 
-		$('body').on('click', '.img-popup', function(event){
-			event.preventDefault();
-			var src = $(this).attr('href');
-			$.magnificPopup.open({
-		      items: {
-			      src: src
-			   },
-			   type: 'image'
-		  	});
-
-		});
-
-	};
+	// var imgPopup = function() {
+	//
+	//
+	// 	$('body').on('click', '.img-popup', function(event){
+	// 		event.preventDefault();
+	// 		var src = $(this).attr('href');
+	// 		$.magnificPopup.open({
+	// 	      items: {
+	// 		      src: src
+	// 		   },
+	// 		   type: 'image'
+	// 	  	});
+	//
+	// 	});
+	//
+	// };
 
 
 	// Document on load.
 	$(function(){
 		fullHeight();
-		burgerMenu();
-		counter();
+		drawModal();
+		resultModal();
+		// counter();
 		contentWayPoint();
-counterWayPoint();
-		imgPopup();
+// counterWayPoint();
+		// imgPopup();
 	});
 
 
