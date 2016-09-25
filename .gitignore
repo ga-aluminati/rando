@@ -4,3 +4,7 @@ composer.phar
 .env
 .DS_Store
 Thumbs.db
+
+/node_modules
+#bundle.js
+npm-debug.log
