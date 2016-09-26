@@ -1,4 +1,6 @@
 {
-  "css/global.css": "css/global-188a44ba75.css",
-  "js/bundle.js": "js/bundle-0e24539601.js"
+  "css/global.css": "css/global-e6775677d9.css",
+  "css/vendor.css": "css/vendor-7b1fd51998.css",
+  "js/bundle.js": "js/bundle-ece7a7855e.js",
+  "js/vendor.js": "js/vendor-e50ca07139.js"
 }
