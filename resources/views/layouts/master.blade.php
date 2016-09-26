@@ -32,12 +32,12 @@
       for Elixir because it looks for "bundle.js" in order to minify it. So when
       this is ready for production we need to run the "webpack" command to actually
       create a physical "bundle.js" file that Gulp will then minimize if it's watching:
-      e.g. $ node ./node_modules/webpack/bin/webpack.js
+      e.g. $ node ./node_modules/webpack/bin/webpack.js --watch
   --}}
-  @if (app()->environment() === 'local')
-  <script src="/js/bundle.js" type="text/javascript"></script>
-  @else
-  <script src="{{ elixir('js/bundle.js') }}" type="text/javascript"></script>
-  @endif
+@if (app()->environment() === 'local')
+<script src="/js/bundle.js" type="text/javascript"></script>
+@else
+<script src="{{ elixir('js/bundle.js') }}" type="text/javascript"></script>
+@endif
 </body>
 </html>
