@@ -34,7 +34,7 @@
 /******/ 	__webpack_require__.c = installedModules;
 
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "/js/bundle.js";
+/******/ 	__webpack_require__.p = "/js";
 
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(0);
@@ -42835,10 +42835,10 @@
 /* 695 */
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
 
 	Object.defineProperty(exports, "__esModule", {
-	  value: true
+	    value: true
 	});
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -42856,26 +42856,380 @@
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 	var Dashboard = function (_Component) {
-	  _inherits(Dashboard, _Component);
+	    _inherits(Dashboard, _Component);
 
-	  function Dashboard() {
-	    _classCallCheck(this, Dashboard);
+	    function Dashboard() {
+	        _classCallCheck(this, Dashboard);
 
-	    return _possibleConstructorReturn(this, (Dashboard.__proto__ || Object.getPrototypeOf(Dashboard)).apply(this, arguments));
-	  }
-
-	  _createClass(Dashboard, [{
-	    key: 'render',
-	    value: function render() {
-	      return _react2.default.createElement(
-	        'div',
-	        null,
-	        'Dashboard foo'
-	      );
+	        return _possibleConstructorReturn(this, (Dashboard.__proto__ || Object.getPrototypeOf(Dashboard)).apply(this, arguments));
 	    }
-	  }]);
 
-	  return Dashboard;
+	    _createClass(Dashboard, [{
+	        key: "render",
+	        value: function render() {
+	            return _react2.default.createElement(
+	                "div",
+	                null,
+	                _react2.default.createElement(
+	                    "div",
+	                    { className: "container-fluid display-table" },
+	                    _react2.default.createElement(
+	                        "div",
+	                        { className: "row display-table-row" },
+	                        _react2.default.createElement(
+	                            "div",
+	                            { className: "col-md-2 col-sm-1 hidden-xs display-table-cell v-align box", id: "navigation" },
+	                            _react2.default.createElement(
+	                                "div",
+	                                { className: "logo" },
+	                                _react2.default.createElement(
+	                                    "a",
+	                                    { href: "dashboard.html" },
+	                                    _react2.default.createElement("img", { width: "60", src: "/i/logo-arrows.svg" })
+	                                )
+	                            ),
+	                            _react2.default.createElement(
+	                                "div",
+	                                { className: "navi" },
+	                                _react2.default.createElement(
+	                                    "ul",
+	                                    null,
+	                                    _react2.default.createElement(
+	                                        "li",
+	                                        { className: "active" },
+	                                        _react2.default.createElement(
+	                                            "a",
+	                                            { href: "#" },
+	                                            _react2.default.createElement("i", { className: "fa fa-calendar-check-o", "aria-hidden": "true" }),
+	                                            _react2.default.createElement(
+	                                                "span",
+	                                                { className: "hidden-xs hidden-sm" },
+	                                                "Upcoming"
+	                                            )
+	                                        )
+	                                    ),
+	                                    _react2.default.createElement(
+	                                        "li",
+	                                        null,
+	                                        _react2.default.createElement(
+	                                            "a",
+	                                            { href: "#" },
+	                                            _react2.default.createElement("i", { className: "fa fa-users", "aria-hidden": "true" }),
+	                                            _react2.default.createElement(
+	                                                "span",
+	                                                { className: "hidden-xs hidden-sm" },
+	                                                "Participated"
+	                                            )
+	                                        )
+	                                    ),
+	                                    _react2.default.createElement(
+	                                        "li",
+	                                        null,
+	                                        _react2.default.createElement(
+	                                            "a",
+	                                            { href: "#" },
+	                                            _react2.default.createElement("i", { className: "fa fa-pencil-square-o", "aria-hidden": "true" }),
+	                                            _react2.default.createElement(
+	                                                "span",
+	                                                { className: "hidden-xs hidden-sm" },
+	                                                "Organized"
+	                                            )
+	                                        )
+	                                    )
+	                                )
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            "div",
+	                            { className: "col-md-10 col-sm-11 display-table-cell v-align" },
+	                            _react2.default.createElement(
+	                                "div",
+	                                { className: "row" },
+	                                _react2.default.createElement(
+	                                    "header",
+	                                    null,
+	                                    _react2.default.createElement(
+	                                        "div",
+	                                        { className: "col-md-7" },
+	                                        _react2.default.createElement(
+	                                            "nav",
+	                                            { className: "navbar-default pull-left" },
+	                                            _react2.default.createElement(
+	                                                "div",
+	                                                { className: "navbar-header" },
+	                                                _react2.default.createElement(
+	                                                    "button",
+	                                                    { type: "button", className: "navbar-toggle collapsed", "data-toggle": "offcanvas", "data-target": "#side-menu", "aria-expanded": "false" },
+	                                                    _react2.default.createElement(
+	                                                        "span",
+	                                                        { className: "sr-only" },
+	                                                        "Toggle navigation"
+	                                                    ),
+	                                                    _react2.default.createElement("span", { className: "icon-bar" }),
+	                                                    _react2.default.createElement("span", { className: "icon-bar" }),
+	                                                    _react2.default.createElement("span", { className: "icon-bar" })
+	                                                )
+	                                            )
+	                                        )
+	                                    ),
+	                                    _react2.default.createElement(
+	                                        "div",
+	                                        { className: "col-md-5" },
+	                                        _react2.default.createElement(
+	                                            "div",
+	                                            { className: "header-rightside" },
+	                                            _react2.default.createElement(
+	                                                "ul",
+	                                                { className: "list-inline header-top pull-right" },
+	                                                _react2.default.createElement(
+	                                                    "li",
+	                                                    { className: "hidden-xs" },
+	                                                    _react2.default.createElement(
+	                                                        "a",
+	                                                        { href: "#", className: "add-event btn btn-primary", "data-toggle": "modal", "data-target": "#add_event" },
+	                                                        "Add Event"
+	                                                    )
+	                                                ),
+	                                                _react2.default.createElement(
+	                                                    "li",
+	                                                    { className: "dropdown" },
+	                                                    _react2.default.createElement(
+	                                                        "a",
+	                                                        { href: "#", className: "dropdown-toggle", "data-toggle": "dropdown" },
+	                                                        _react2.default.createElement("img", { alt: "", src: "http://keenthemes.com/assets/bootsnipp/img1-small.jpg" }),
+	                                                        _react2.default.createElement("b", { className: "caret" })
+	                                                    ),
+	                                                    _react2.default.createElement(
+	                                                        "ul",
+	                                                        { className: "dropdown-menu" },
+	                                                        _react2.default.createElement(
+	                                                            "li",
+	                                                            null,
+	                                                            _react2.default.createElement(
+	                                                                "div",
+	                                                                { className: "navbar-content" },
+	                                                                _react2.default.createElement(
+	                                                                    "span",
+	                                                                    null,
+	                                                                    "Jane Doe"
+	                                                                ),
+	                                                                _react2.default.createElement(
+	                                                                    "p",
+	                                                                    { className: "text-muted small" },
+	                                                                    "jane@doe.com"
+	                                                                ),
+	                                                                _react2.default.createElement("div", { className: "divider" }),
+	                                                                _react2.default.createElement(
+	                                                                    "a",
+	                                                                    { href: "#", className: " btn btn-secondary active" },
+	                                                                    "View Profile"
+	                                                                )
+	                                                            )
+	                                                        )
+	                                                    )
+	                                                )
+	                                            )
+	                                        )
+	                                    )
+	                                )
+	                            ),
+	                            _react2.default.createElement(
+	                                "div",
+	                                { className: "user-dashboard" },
+	                                _react2.default.createElement(
+	                                    "h1",
+	                                    null,
+	                                    "Upcoming"
+	                                ),
+	                                _react2.default.createElement(
+	                                    "div",
+	                                    { className: "row" },
+	                                    _react2.default.createElement(
+	                                        "div",
+	                                        { className: "gutter" },
+	                                        _react2.default.createElement(
+	                                            "div",
+	                                            { className: "container" },
+	                                            _react2.default.createElement(
+	                                                "table",
+	                                                { className: "table table-responsive table-hover" },
+	                                                _react2.default.createElement(
+	                                                    "thead",
+	                                                    null,
+	                                                    _react2.default.createElement(
+	                                                        "tr",
+	                                                        null,
+	                                                        _react2.default.createElement(
+	                                                            "th",
+	                                                            null,
+	                                                            "Event"
+	                                                        ),
+	                                                        _react2.default.createElement(
+	                                                            "th",
+	                                                            null,
+	                                                            "Participants"
+	                                                        ),
+	                                                        _react2.default.createElement(
+	                                                            "th",
+	                                                            null,
+	                                                            "Deadline"
+	                                                        )
+	                                                    )
+	                                                ),
+	                                                _react2.default.createElement(
+	                                                    "tbody",
+	                                                    null,
+	                                                    _react2.default.createElement(
+	                                                        "tr",
+	                                                        null,
+	                                                        _react2.default.createElement(
+	                                                            "td",
+	                                                            null,
+	                                                            _react2.default.createElement(
+	                                                                "a",
+	                                                                { href: "#" },
+	                                                                "AngelHack 2016"
+	                                                            )
+	                                                        ),
+	                                                        _react2.default.createElement(
+	                                                            "td",
+	                                                            null,
+	                                                            "11"
+	                                                        ),
+	                                                        _react2.default.createElement(
+	                                                            "td",
+	                                                            null,
+	                                                            "08/11/2016 3 pm"
+	                                                        )
+	                                                    ),
+	                                                    _react2.default.createElement(
+	                                                        "tr",
+	                                                        null,
+	                                                        _react2.default.createElement(
+	                                                            "td",
+	                                                            null,
+	                                                            _react2.default.createElement(
+	                                                                "a",
+	                                                                { href: "#" },
+	                                                                "GA Hackathon"
+	                                                            )
+	                                                        ),
+	                                                        _react2.default.createElement(
+	                                                            "td",
+	                                                            null,
+	                                                            "24"
+	                                                        ),
+	                                                        _react2.default.createElement("td", null)
+	                                                    ),
+	                                                    _react2.default.createElement(
+	                                                        "tr",
+	                                                        null,
+	                                                        _react2.default.createElement(
+	                                                            "td",
+	                                                            null,
+	                                                            _react2.default.createElement(
+	                                                                "a",
+	                                                                { href: "#" },
+	                                                                "Secret Santa Funtime!"
+	                                                            )
+	                                                        ),
+	                                                        _react2.default.createElement(
+	                                                            "td",
+	                                                            null,
+	                                                            "3"
+	                                                        ),
+	                                                        _react2.default.createElement("td", null)
+	                                                    )
+	                                                )
+	                                            )
+	                                        )
+	                                    ),
+	                                    _react2.default.createElement("div", { className: "col-md-7 col-sm-7 col-xs-12 gutter" })
+	                                )
+	                            )
+	                        )
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    "div",
+	                    { id: "add_event", className: "modal fade", role: "dialog" },
+	                    _react2.default.createElement(
+	                        "div",
+	                        { className: "modal-dialog" },
+	                        _react2.default.createElement(
+	                            "div",
+	                            { className: "modal-content" },
+	                            _react2.default.createElement(
+	                                "div",
+	                                { className: "modal-header login-header" },
+	                                _react2.default.createElement(
+	                                    "button",
+	                                    { type: "button", className: "close", "data-dismiss": "modal" },
+	                                    "×"
+	                                ),
+	                                _react2.default.createElement(
+	                                    "h4",
+	                                    { className: "modal-title" },
+	                                    "Add Event"
+	                                )
+	                            ),
+	                            _react2.default.createElement(
+	                                "div",
+	                                { className: "modal-body" },
+	                                _react2.default.createElement("input", { type: "text", placeholder: "Event Name", name: "name" }),
+	                                _react2.default.createElement("textarea", { name: "description", placeholder: "Description" }),
+	                                _react2.default.createElement(
+	                                    "select",
+	                                    { className: "form-control", name: "" },
+	                                    _react2.default.createElement(
+	                                        "option",
+	                                        { value: "" },
+	                                        "Order"
+	                                    ),
+	                                    _react2.default.createElement(
+	                                        "option",
+	                                        { value: "" },
+	                                        "Group"
+	                                    )
+	                                ),
+	                                _react2.default.createElement(
+	                                    "select",
+	                                    { className: "form-control", name: "" },
+	                                    _react2.default.createElement(
+	                                        "option",
+	                                        { value: "" },
+	                                        "Number of users per group:"
+	                                    ),
+	                                    _react2.default.createElement(
+	                                        "option",
+	                                        { value: "" },
+	                                        "Number of groups:"
+	                                    )
+	                                ),
+	                                _react2.default.createElement("input", { type: "text", placeholder: "", name: "name" })
+	                            ),
+	                            _react2.default.createElement(
+	                                "div",
+	                                { className: "modal-footer" },
+	                                _react2.default.createElement(
+	                                    "a",
+	                                    { href: "#", "data-dismiss": "modal" },
+	                                    "Close"
+	                                ),
+	                                _react2.default.createElement(
+	                                    "button",
+	                                    { type: "button", className: "btn btn-primary", "data-dismiss": "modal" },
+	                                    "Save"
+	                                )
+	                            )
+	                        )
+	                    )
+	                )
+	            );
+	        }
+	    }]);
+
+	    return Dashboard;
 	}(_react.Component);
 
 	exports.default = Dashboard;

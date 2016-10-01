@@ -18,10 +18,10 @@ export default class Event extends Component {
       $('.page-alert').slideUp()
     });
 
-    this.fullHeight();
-		this.drawModal();
-		this.resultModal();
-		this.contentWayPoint();
+    this.fullHeight()
+		this.drawModal()
+		this.resultModal()
+		this.contentWayPoint()
   }
 
   fullHeight() {
@@ -269,37 +269,37 @@ export default class Event extends Component {
                   <div className="row">
                     <div className="participants">
                       <div className="active item">
-                          <div className="participant">
-                            <img alt="" src="http://keenthemes.com/assets/bootsnipp/img1-small.jpg" className="pull-left" />
-                            <div className="pull-left">
-                              <span>Lina Mars</span>
-                            </div>
+                        <div className="participant">
+                          <img alt="" src="http://keenthemes.com/assets/bootsnipp/img1-small.jpg" className="pull-left" />
+                          <div className="pull-left">
+                            <span>Lina Mars</span>
                           </div>
                         </div>
-                        <div className="active item">
-                          <div className="participant">
-                            <img alt="" src="http://keenthemes.com/assets/bootsnipp/img1-small.jpg" className="pull-left" />
-                            <div className="pull-left">
-                              <span>Lina Mars</span>
-                            </div>
+                      </div>
+                      <div className="active item">
+                        <div className="participant">
+                          <img alt="" src="http://keenthemes.com/assets/bootsnipp/img1-small.jpg" className="pull-left" />
+                          <div className="pull-left">
+                            <span>Lina Mars</span>
                           </div>
                         </div>
-                        <div className="item">
-                          <div className="participant">
-                            <img alt="" src="http://keenthemes.com/assets/bootsnipp/img1-small.jpg" className="pull-left" />
-                            <div className="pull-left">
-                              <span>Lina Mars</span>
-                            </div>
+                      </div>
+                      <div className="item">
+                        <div className="participant">
+                          <img alt="" src="http://keenthemes.com/assets/bootsnipp/img1-small.jpg" className="pull-left" />
+                          <div className="pull-left">
+                            <span>Lina Mars</span>
                           </div>
                         </div>
-                        <div className="item">
-                          <div className="participant">
-                            <img alt="" src="http://keenthemes.com/assets/bootsnipp/img1-small.jpg" className="pull-left" />
-                            <div className="pull-left">
-                              <span>Lina Mars</span>
-                            </div>
+                      </div>
+                      <div className="item">
+                        <div className="participant">
+                          <img alt="" src="http://keenthemes.com/assets/bootsnipp/img1-small.jpg" className="pull-left" />
+                          <div className="pull-left">
+                            <span>Lina Mars</span>
                           </div>
                         </div>
+                      </div>
                     </div>
                   </div>
               </div>
