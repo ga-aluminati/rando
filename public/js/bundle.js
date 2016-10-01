@@ -34,7 +34,7 @@
 /******/ 	__webpack_require__.c = installedModules;
 
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "/js";
+/******/ 	__webpack_require__.p = "/js/bundle.js";
 
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(0);
@@ -89,15 +89,15 @@
 
 	var _home2 = _interopRequireDefault(_home);
 
-	var _event = __webpack_require__(695);
+	var _event = __webpack_require__(694);
 
 	var _event2 = _interopRequireDefault(_event);
 
-	var _dashboard = __webpack_require__(696);
+	var _dashboard = __webpack_require__(695);
 
 	var _dashboard2 = _interopRequireDefault(_dashboard);
 
-	var _reducers = __webpack_require__(694);
+	var _reducers = __webpack_require__(696);
 
 	var reducers = _interopRequireWildcard(_reducers);
 
@@ -115,7 +115,7 @@
 	  _react2.default.createElement(_reduxDevtoolsLogMonitor2.default, { theme: 'tomorrow', preserveScrollTop: false })
 	));
 
-	var store = (0, _redux.createStore)(reducer, DevTools.instrument());
+	var store = (0, _redux.createStore)(reducer);
 	var history = (0, _reactRouterRedux.syncHistoryWithStore)(_reactRouter.browserHistory, store);
 
 	var createStoreWithMiddleware = (0, _redux.applyMiddleware)()(_redux.createStore);
@@ -139,7 +139,7 @@
 	    ),
 	    _react2.default.createElement(DevTools, null)
 	  )
-	), document.querySelector('.container'));
+	), document.querySelector('.main'));
 
 /***/ },
 /* 2 */
@@ -42146,16 +42146,7 @@
 	      return _react2.default.createElement(
 	        'div',
 	        null,
-	        _react2.default.createElement(
-	          'h2',
-	          null,
-	          'randomize.co'
-	        ),
-	        _react2.default.createElement(
-	          'div',
-	          null,
-	          this.props.children
-	        )
+	        this.props.children
 	      );
 	    }
 	  }]);
@@ -42223,12 +42214,6 @@
 
 /***/ },
 /* 694 */
-/***/ function(module, exports) {
-
-	"use strict";
-
-/***/ },
-/* 695 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -42261,12 +42246,582 @@
 	  }
 
 	  _createClass(Event, [{
+	    key: 'componentDidMount',
+	    value: function componentDidMount() {
+	      var alert = $('#alert-1');
+
+	      alert.appendTo('.page-alerts');
+	      alert.slideDown();
+
+	      $('.page-alert .close').click(function (e) {
+	        e.preventDefault();
+	        $(this).closest('.page-alert').slideUp();
+	      });
+
+	      $('.clear-page-alerts').click(function (e) {
+	        e.preventDefault();
+	        $('.page-alert').slideUp();
+	      });
+
+	      this.fullHeight();
+	      this.drawModal();
+	      this.resultModal();
+	      this.contentWayPoint();
+	    }
+	  }, {
+	    key: 'fullHeight',
+	    value: function fullHeight() {
+	      $('.js-fullheight').css('height', $(window).height());
+	      $(window).resize(function () {
+	        $('.js-fullheight').css('height', $(window).height());
+	      });
+	    }
+	  }, {
+	    key: 'drawModal',
+	    value: function drawModal() {
+	      $('.js-fh5co-draw-toggle').on('click', function (e) {
+	        e.preventDefault();
+
+	        if ($('body').hasClass('draw-show')) {
+	          $('body').removeClass('draw-show');
+	          $('#fh5co-draw-window > .js-fh5co-draw-toggle').removeClass('show');
+	        } else {
+	          $('body').addClass('draw-show');
+	          setTimeout(function () {
+	            $('#fh5co-draw-window > .js-fh5co-draw-toggle').addClass('show');
+	          }, 900);
+	        }
+	      });
+	    }
+	  }, {
+	    key: 'resultModal',
+	    value: function resultModal() {
+	      $('.js-fh5co-result-toggle').on('click', function (e) {
+	        e.preventDefault();
+
+	        if ($('body').hasClass('result-show')) {
+	          $('body').removeClass('result-show');
+	          $('#fh5co-result-window > .js-fh5co-result-toggle').removeClass('show');
+	        } else {
+	          $('body').addClass('result-show');
+	          setTimeout(function () {
+	            $('#fh5co-result-window > .js-fh5co-result-toggle').addClass('show');
+	          }, 900);
+	        }
+	      });
+	    }
+	  }, {
+	    key: 'contentWayPoint',
+	    value: function contentWayPoint() {
+	      var i = 0;
+
+	      $('.animate-box').waypoint(function (direction) {
+	        if (direction === 'down' && !$(this.element).hasClass('animated')) {
+	          i++;
+	          $(this.element).addClass('item-animate');
+
+	          setTimeout(function () {
+	            $('body .animate-box.item-animate').each(function (k) {
+	              var el = $(this);
+
+	              setTimeout(function () {
+	                var effect = el.data('animate-effect');
+
+	                if (effect === 'fadeIn') {
+	                  el.addClass('fadeIn animated');
+	                } else {
+	                  el.addClass('fadeInUp animated');
+	                }
+
+	                el.removeClass('item-animate');
+	              }, k * 200, 'easeInOutExpo');
+	            });
+	          }, 100);
+	        }
+	      }, { offset: '85%' });
+	    }
+	  }, {
 	    key: 'render',
 	    value: function render() {
 	      return _react2.default.createElement(
 	        'div',
 	        null,
-	        'Events!'
+	        _react2.default.createElement(
+	          'section',
+	          { id: 'fh5co-draw-window' },
+	          _react2.default.createElement(
+	            'a',
+	            { href: '#', className: 'js-fh5co-draw-toggle fh5co-draw-toggle active' },
+	            _react2.default.createElement('i', null)
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'js-fullheight fh5co-table' },
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'fh5co-table-cell js-fullheight' },
+	              _react2.default.createElement(
+	                'h2',
+	                null,
+	                'Drawing has taken place'
+	              ),
+	              _react2.default.createElement(
+	                'p',
+	                null,
+	                'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, ab delectus voluptates. Consequuntur officiis laboriosam placeat ut provident rem minima quibusdam error odio quia dolore, sit repellat maxime quos sequi.'
+	              ),
+	              _react2.default.createElement('p', null),
+	              _react2.default.createElement('p', null)
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'section',
+	          { id: 'fh5co-result-window' },
+	          _react2.default.createElement(
+	            'a',
+	            { href: '#', className: 'js-fh5co-result-toggle fh5co-result-toggle active' },
+	            _react2.default.createElement('i', null)
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'js-fullheight fh5co-table' },
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'fh5co-table-cell js-fullheight textcenter' },
+	              _react2.default.createElement(
+	                'h2',
+	                null,
+	                'You have been matched with ',
+	                _react2.default.createElement(
+	                  'strong',
+	                  null,
+	                  'Jane Doe'
+	                ),
+	                '!'
+	              ),
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'single-match' },
+	                _react2.default.createElement(
+	                  'div',
+	                  { className: 'participants' },
+	                  _react2.default.createElement(
+	                    'div',
+	                    { className: 'active item' },
+	                    _react2.default.createElement(
+	                      'div',
+	                      { className: 'participant' },
+	                      _react2.default.createElement('img', { alt: '', src: 'http://keenthemes.com/assets/bootsnipp/img1-small.jpg', className: 'pull-left' }),
+	                      _react2.default.createElement(
+	                        'div',
+	                        { className: 'pull-left' },
+	                        _react2.default.createElement(
+	                          'span',
+	                          null,
+	                          'Jane Doe'
+	                        )
+	                      )
+	                    )
+	                  )
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'h2',
+	                null,
+	                'Here is your group!'
+	              ),
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'participants' },
+	                _react2.default.createElement(
+	                  'div',
+	                  { className: 'active item' },
+	                  _react2.default.createElement(
+	                    'div',
+	                    { className: 'participant' },
+	                    _react2.default.createElement('img', { alt: '', src: 'http://keenthemes.com/assets/bootsnipp/img1-small.jpg', className: 'pull-left' }),
+	                    _react2.default.createElement(
+	                      'div',
+	                      { className: 'pull-left' },
+	                      _react2.default.createElement(
+	                        'span',
+	                        null,
+	                        'Lina Mars'
+	                      )
+	                    )
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'div',
+	                  { className: 'active item' },
+	                  _react2.default.createElement(
+	                    'div',
+	                    { className: 'participant' },
+	                    _react2.default.createElement('img', { alt: '', src: 'http://keenthemes.com/assets/bootsnipp/img1-small.jpg', className: 'pull-left' }),
+	                    _react2.default.createElement(
+	                      'div',
+	                      { className: 'pull-left' },
+	                      _react2.default.createElement(
+	                        'span',
+	                        null,
+	                        'Lina Mars'
+	                      )
+	                    )
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'div',
+	                  { className: 'active item' },
+	                  _react2.default.createElement(
+	                    'div',
+	                    { className: 'participant' },
+	                    _react2.default.createElement('img', { alt: '', src: 'http://keenthemes.com/assets/bootsnipp/img1-small.jpg', className: 'pull-left' }),
+	                    _react2.default.createElement(
+	                      'div',
+	                      { className: 'pull-left' },
+	                      _react2.default.createElement(
+	                        'span',
+	                        null,
+	                        'Lina Mars'
+	                      )
+	                    )
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'div',
+	                  { className: 'active item' },
+	                  _react2.default.createElement(
+	                    'div',
+	                    { className: 'participant' },
+	                    _react2.default.createElement('img', { alt: '', src: 'http://keenthemes.com/assets/bootsnipp/img1-small.jpg', className: 'pull-left' }),
+	                    _react2.default.createElement(
+	                      'div',
+	                      { className: 'pull-left' },
+	                      _react2.default.createElement(
+	                        'span',
+	                        null,
+	                        'Lina Mars'
+	                      )
+	                    )
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'div',
+	                  { className: 'active item' },
+	                  _react2.default.createElement(
+	                    'div',
+	                    { className: 'participant' },
+	                    _react2.default.createElement('img', { alt: '', src: 'http://keenthemes.com/assets/bootsnipp/img1-small.jpg', className: 'pull-left' }),
+	                    _react2.default.createElement(
+	                      'div',
+	                      { className: 'pull-left' },
+	                      _react2.default.createElement(
+	                        'span',
+	                        null,
+	                        'Lina Mars'
+	                      )
+	                    )
+	                  )
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'h2',
+	                null,
+	                'Guess what? You are number ',
+	                _react2.default.createElement(
+	                  'span',
+	                  { className: 'placement' },
+	                  '9'
+	                ),
+	                '!'
+	              ),
+	              _react2.default.createElement(
+	                'p',
+	                null,
+	                'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, ab delectus voluptates. Consequuntur officiis laboriosam placeat ut provident rem minima quibusdam error odio quia dolore, sit repellat maxime quos sequi.'
+	              )
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'page-alerts' },
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'alert alert-info page-alert text-center', id: 'alert-2' },
+	            _react2.default.createElement(
+	              'button',
+	              { type: 'button', className: 'close' },
+	              _react2.default.createElement(
+	                'span',
+	                { 'aria-hidden': 'true' },
+	                '×'
+	              ),
+	              _react2.default.createElement(
+	                'span',
+	                { className: 'sr-only' },
+	                'Close'
+	              )
+	            ),
+	            'Go to ',
+	            _react2.default.createElement(
+	              'strong',
+	              null,
+	              'randomize.co'
+	            ),
+	            ' and use code ',
+	            _react2.default.createElement(
+	              'strong',
+	              null,
+	              '2551'
+	            ),
+	            ' to join'
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { id: 'fh5co-page' },
+	          _react2.default.createElement(
+	            'header',
+	            null,
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'container' },
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'fh5co-navbar-brand' },
+	                _react2.default.createElement(
+	                  'h1',
+	                  { className: 'text-center' },
+	                  _react2.default.createElement(
+	                    'a',
+	                    { href: 'index.html' },
+	                    _react2.default.createElement('img', { width: '60', src: '/i/logo-arrows.svg' })
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'div',
+	                  { className: 'right-menu' },
+	                  _react2.default.createElement(
+	                    'ul',
+	                    null,
+	                    _react2.default.createElement(
+	                      'li',
+	                      null,
+	                      _react2.default.createElement(
+	                        'a',
+	                        { href: '#' },
+	                        _react2.default.createElement('i', { className: 'fa fa-user-plus menu-secondary', 'aria-hidden': 'true' })
+	                      )
+	                    ),
+	                    _react2.default.createElement(
+	                      'li',
+	                      null,
+	                      _react2.default.createElement(
+	                        'button',
+	                        { className: 'btn btn-primary' },
+	                        'Join'
+	                      )
+	                    ),
+	                    _react2.default.createElement(
+	                      'li',
+	                      null,
+	                      _react2.default.createElement(
+	                        'button',
+	                        { className: 'btn btn-secondary' },
+	                        _react2.default.createElement('i', { className: 'fa fa-check-circle', 'aria-hidden': 'true' }),
+	                        ' ',
+	                        _react2.default.createElement(
+	                          'span',
+	                          null,
+	                          'Joined'
+	                        )
+	                      )
+	                    ),
+	                    _react2.default.createElement(
+	                      'li',
+	                      null,
+	                      _react2.default.createElement(
+	                        'button',
+	                        { className: 'btn btn-primary js-fh5co-draw-toggle' },
+	                        'Draw'
+	                      )
+	                    ),
+	                    _react2.default.createElement(
+	                      'li',
+	                      null,
+	                      _react2.default.createElement(
+	                        'button',
+	                        { className: 'btn btn-secondary js-fh5co-result-toggle' },
+	                        _react2.default.createElement('i', { className: 'fa fa-check-circle', 'aria-hidden': 'true' }),
+	                        ' Drawn'
+	                      )
+	                    )
+	                  )
+	                )
+	              )
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { id: 'main-section' },
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'container' },
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'col-xl-8 col-lg-8 col-md-8 nopadding' },
+	                _react2.default.createElement(
+	                  'div',
+	                  { id: 'fh5co-intro-section' },
+	                  _react2.default.createElement(
+	                    'div',
+	                    { className: 'container nopadding' },
+	                    _react2.default.createElement(
+	                      'div',
+	                      { className: 'row' },
+	                      _react2.default.createElement(
+	                        'div',
+	                        { className: 'col-md-8 animate-box' },
+	                        _react2.default.createElement(
+	                          'h2',
+	                          { className: 'intro-heading' },
+	                          'General Assembly Hackathon'
+	                        ),
+	                        _react2.default.createElement(
+	                          'p',
+	                          null,
+	                          'This is a description of the app'
+	                        )
+	                      )
+	                    )
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'div',
+	                  { id: 'fh5co-photos-section' },
+	                  _react2.default.createElement(
+	                    'div',
+	                    { id: 'ri-grid', className: 'ri-grid ri-grid-size-2' },
+	                    _react2.default.createElement('img', { className: 'ri-loading-image', src: 'images/loading.gif' }),
+	                    _react2.default.createElement(
+	                      'ul',
+	                      null,
+	                      _react2.default.createElement(
+	                        'li',
+	                        null,
+	                        _react2.default.createElement(
+	                          'a',
+	                          { href: '#' },
+	                          _react2.default.createElement('img', { src: 'images/pic1.jpg' })
+	                        )
+	                      ),
+	                      _react2.default.createElement(
+	                        'li',
+	                        null,
+	                        _react2.default.createElement(
+	                          'a',
+	                          { href: '#' },
+	                          _react2.default.createElement('img', { src: 'images/pic2.jpg' })
+	                        )
+	                      )
+	                    )
+	                  )
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'col-xl-4 col-lg-4 col-md-4 participants-sidebar' },
+	                _react2.default.createElement(
+	                  'div',
+	                  { className: 'participants-header' },
+	                  '17 participants'
+	                ),
+	                _react2.default.createElement(
+	                  'div',
+	                  { className: 'row' },
+	                  _react2.default.createElement(
+	                    'div',
+	                    { className: 'participants' },
+	                    _react2.default.createElement(
+	                      'div',
+	                      { className: 'active item' },
+	                      _react2.default.createElement(
+	                        'div',
+	                        { className: 'participant' },
+	                        _react2.default.createElement('img', { alt: '', src: 'http://keenthemes.com/assets/bootsnipp/img1-small.jpg', className: 'pull-left' }),
+	                        _react2.default.createElement(
+	                          'div',
+	                          { className: 'pull-left' },
+	                          _react2.default.createElement(
+	                            'span',
+	                            null,
+	                            'Lina Mars'
+	                          )
+	                        )
+	                      )
+	                    ),
+	                    _react2.default.createElement(
+	                      'div',
+	                      { className: 'active item' },
+	                      _react2.default.createElement(
+	                        'div',
+	                        { className: 'participant' },
+	                        _react2.default.createElement('img', { alt: '', src: 'http://keenthemes.com/assets/bootsnipp/img1-small.jpg', className: 'pull-left' }),
+	                        _react2.default.createElement(
+	                          'div',
+	                          { className: 'pull-left' },
+	                          _react2.default.createElement(
+	                            'span',
+	                            null,
+	                            'Lina Mars'
+	                          )
+	                        )
+	                      )
+	                    ),
+	                    _react2.default.createElement(
+	                      'div',
+	                      { className: 'item' },
+	                      _react2.default.createElement(
+	                        'div',
+	                        { className: 'participant' },
+	                        _react2.default.createElement('img', { alt: '', src: 'http://keenthemes.com/assets/bootsnipp/img1-small.jpg', className: 'pull-left' }),
+	                        _react2.default.createElement(
+	                          'div',
+	                          { className: 'pull-left' },
+	                          _react2.default.createElement(
+	                            'span',
+	                            null,
+	                            'Lina Mars'
+	                          )
+	                        )
+	                      )
+	                    ),
+	                    _react2.default.createElement(
+	                      'div',
+	                      { className: 'item' },
+	                      _react2.default.createElement(
+	                        'div',
+	                        { className: 'participant' },
+	                        _react2.default.createElement('img', { alt: '', src: 'http://keenthemes.com/assets/bootsnipp/img1-small.jpg', className: 'pull-left' }),
+	                        _react2.default.createElement(
+	                          'div',
+	                          { className: 'pull-left' },
+	                          _react2.default.createElement(
+	                            'span',
+	                            null,
+	                            'Lina Mars'
+	                          )
+	                        )
+	                      )
+	                    )
+	                  )
+	                )
+	              )
+	            )
+	          )
+	        )
 	      );
 	    }
 	  }]);
@@ -42277,7 +42832,7 @@
 	exports.default = Event;
 
 /***/ },
-/* 696 */
+/* 695 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -42324,6 +42879,12 @@
 	}(_react.Component);
 
 	exports.default = Dashboard;
+
+/***/ },
+/* 696 */
+/***/ function(module, exports) {
+
+	"use strict";
 
 /***/ }
 /******/ ]);

@@ -31,7 +31,7 @@ const DevTools = createDevTools(
 
 const store = createStore(
   reducer,
-  DevTools.instrument()
+  //DevTools.instrument()
 )
 const history = syncHistoryWithStore(browserHistory, store)
 
@@ -50,4 +50,4 @@ ReactDOM.render(
       <DevTools />
     </div>
   </Provider>
-  , document.querySelector('.container'))
+  , document.querySelector('.main'))

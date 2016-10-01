@@ -1410,3 +1410,11 @@ header.dashboard {
 }
 
 }
+
+.btn-secondary span {
+  font-size: 120%;
+  color: #333;
+}
+button:hover, .btn-secondary span:hover {
+  color: #fff;
+}

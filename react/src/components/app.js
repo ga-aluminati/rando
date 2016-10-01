@@ -5,8 +5,7 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        <h2>randomize.co</h2>
-        <div>{ this.props.children }</div>
+        { this.props.children }
       </div>
     );
   }

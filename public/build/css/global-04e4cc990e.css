@@ -1506,3 +1506,13 @@ header.dashboard {
 .modal-header.login-header .user-dashboard .container .table-responsive .table th td a {
   font-size: .5rem !important;
 }
+
+.btn-secondary span {
+  font-size: 120%;
+  color: #333;
+}
+
+button:hover,
+.btn-secondary span:hover {
+  color: #fff;
+}

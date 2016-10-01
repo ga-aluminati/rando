@@ -28,7 +28,7 @@
   <![endif]-->
 </head>
 <body>
-<div class="container">@yield('content')</div>
+<div class="main">@yield('content')</div>
 {{--
       Working with both Webpack for React and Gulp for Lumen presents some odd
       challenges. When running webpack-dev-server with "$ npm start", the file served
