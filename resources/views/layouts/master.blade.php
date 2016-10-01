@@ -39,6 +39,7 @@
       e.g. "$ node ./node_modules/webpack/bin/webpack.js --watch"
 --}}
 <script src="//code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="{{ elixir('js/vendor.js') }}" type="text/javascript"></script>
 @if (app()->environment() === 'local')
 <script src="/js/bundle.js" type="text/javascript"></script>

@@ -42869,7 +42869,7 @@
 	        value: function render() {
 	            return _react2.default.createElement(
 	                "div",
-	                null,
+	                { className: "dashboard" },
 	                _react2.default.createElement(
 	                    "div",
 	                    { className: "container-fluid display-table" },
@@ -42884,7 +42884,7 @@
 	                                { className: "logo" },
 	                                _react2.default.createElement(
 	                                    "a",
-	                                    { href: "dashboard.html" },
+	                                    { href: "#" },
 	                                    _react2.default.createElement("img", { width: "60", src: "/i/logo-arrows.svg" })
 	                                )
 	                            ),
