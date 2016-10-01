@@ -45,6 +45,20 @@ class Handler extends ExceptionHandler
      */
     public function render($request, Exception $e)
     {
-        return parent::render($request, $e);
+      if ($e instanceof ModelNotFoundException) {
+        $e = new NotFoundHttpException($e->getMessage(), $e);
+      }
+
+      if ($e instanceof TokenMismatchException) {
+        return redirect()->back()->withInput($request->except('password'))->withErrors(['Validation Token was expired. Please try again']);
+      }
+
+      // You can add your own exception here
+      // so redirect to the home route if it's not a route found
+      if (get_class($e) == 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException') {
+        return redirect()->route('home');
+      }
+
+      return parent::render($request, $e);
     }
 }

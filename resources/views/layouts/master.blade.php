@@ -28,15 +28,15 @@
   <![endif]-->
 </head>
 <body>
-  <div class="container">@yield('content')</div>
+<div class="container">@yield('content')</div>
 {{--
       Working with both Webpack for React and Gulp for Lumen presents some odd
-      challenges. When running webpack-dev-server, the file served exists only in
-      memory, there is no "bundle.js" that's written to the hard drive. This is problematic
-      for Elixir because it looks for "bundle.js" in order to minify it. So when
-      this is ready for production we need to run the "webpack" command to actually
+      challenges. When running webpack-dev-server with "$ npm start", the file served
+      exists only in memory, there is no "bundle.js" that's written to the hard drive.
+      This is problematic for Elixir because it looks for "bundle.js" in order to minify it.
+      So when this is ready for production we need to run the "webpack" command to actually
       create a physical "bundle.js" file that Gulp will then minimize if it's watching:
-      e.g. $ node ./node_modules/webpack/bin/webpack.js --watch
+      e.g. "$ node ./node_modules/webpack/bin/webpack.js --watch"
 --}}
 <script src="//code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 <script src="{{ elixir('js/vendor.js') }}" type="text/javascript"></script>

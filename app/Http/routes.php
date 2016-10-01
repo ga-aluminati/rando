@@ -11,6 +11,14 @@
 |
 */
 
-$app->get('/', function () use ($app) {
+$app->get('/', ['as' => 'home', function () use ($app) {
+  return view('index');
+}]);
+
+$app->get('/event', function () use ($app) {
+  return view('index');
+});
+
+$app->get('/dashboard', function () use ($app) {
   return view('index');
 });
