@@ -1,6 +1,6 @@
 import React, { Component } from 'React'
 
-export default class DrawingModalResultsGroup extends Component {
+export default class DrawingModalGroup extends Component {
   componentDidMount() {
     $('.js-fh5co-result-toggle').on('click', function(e) {
       e.preventDefault()
