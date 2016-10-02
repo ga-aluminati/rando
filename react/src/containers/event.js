@@ -4,6 +4,8 @@ import DrawingModalResultsSingle from '../components/drawing-modal-results-singl
 import DrawingModalResultsGroup from '../components/drawing-modal-results-group'
 import DrawingModalResultsSequence from '../components/drawing-modal-results-sequence'
 import Alert from '../components/alert'
+import UsersGridList from '../components/users-grid-list'
+import ParticipantsList from '../components/participants-list'
 
 export default class Event extends Component {
   componentDidMount() {
@@ -12,13 +14,35 @@ export default class Event extends Component {
   }
 
   render() {
+    const users = [
+      { id: 1, name: 'Bruno Mars', thumbnail_url: 'http://keenthemes.com/assets/bootsnipp/img1-small.jpg' },
+      { id: 2, name: 'Usher', thumbnail_url: 'http://keenthemes.com/assets/bootsnipp/img1-small.jpg' },
+      { id: 3, name: 'Radiohead', thumbnail_url: 'http://keenthemes.com/assets/bootsnipp/img1-small.jpg' },
+      { id: 4, name: 'Bruno Mars', thumbnail_url: 'http://keenthemes.com/assets/bootsnipp/img1-small.jpg' },
+      { id: 5, name: 'Usher', thumbnail_url: 'http://keenthemes.com/assets/bootsnipp/img1-small.jpg' },
+      { id: 6, name: 'Radiohead', thumbnail_url: 'http://keenthemes.com/assets/bootsnipp/img1-small.jpg' }
+    ]
+    const participants = [
+      { id: 1, name: 'Bruno Mars', thumbnail_url: 'http://keenthemes.com/assets/bootsnipp/img1-small.jpg' },
+      { id: 2, name: 'Usher', thumbnail_url: 'http://keenthemes.com/assets/bootsnipp/img1-small.jpg' },
+      { id: 3, name: 'Radiohead', thumbnail_url: 'http://keenthemes.com/assets/bootsnipp/img1-small.jpg' },
+      { id: 4, name: 'Bruno Mars', thumbnail_url: 'http://keenthemes.com/assets/bootsnipp/img1-small.jpg' },
+      { id: 5, name: 'Usher', thumbnail_url: 'http://keenthemes.com/assets/bootsnipp/img1-small.jpg' },
+      { id: 6, name: 'Radiohead', thumbnail_url: 'http://keenthemes.com/assets/bootsnipp/img1-small.jpg' }
+    ]
+    const highlightUsers = [1, 2]
+    const title = 'General Assembly Hackathon'
+    const description = 'This is a description of the app'
+
     return (
       <div>
         <DrawingModalOrganizer />
 
-        {/* <DrawingModalResultsSingle /> */}
+        {/*
+          <DrawingModalResultsSingle />
+          <DrawingModalResultsSequence />
+        */}
         <DrawingModalResultsGroup />
-        {/* <DrawingModalResultsSequence /> */}
 
         <Alert alertType="info" message="Go to <strong>randomize.co</strong> and use code <strong>2551</strong> to join" />
 
@@ -47,72 +71,18 @@ export default class Event extends Component {
                   <div className="container nopadding">
                     <div className="row">
                       <div className="col-md-8 animate-box">
-                        <h2 className="intro-heading">General Assembly Hackathon</h2>
-                        <p>This is a description of the app</p>
+                        <h2 className="intro-heading">{ title }</h2>
+                        <p>{ description }</p>
                       </div>
                     </div>
                   </div>
                 </div>
 
-                <div id="fh5co-photos-section">
-                    <div id="ri-grid" className="ri-grid ri-grid-size-2">
-                      <img className="ri-loading-image" src="images/loading.gif"/>
-                      <ul>
-                        <li>
-                          <a href="#">
-                            <img src="images/pic1.jpg"/>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#">
-                            <img src="images/pic2.jpg"/>
-                          </a>
-                        </li>
-
-                      </ul>
-                    </div>
-                </div>
+                <UsersGridList users={ users } />
               </div>
 
               <div className="col-xl-4 col-lg-4 col-md-4 participants-sidebar">
-                <div className="participants-header">17 participants</div>
-
-                  <div className="row">
-                    <div className="participants">
-                      <div className="active item">
-                        <div className="participant">
-                          <img alt="" src="http://keenthemes.com/assets/bootsnipp/img1-small.jpg" className="pull-left" />
-                          <div className="pull-left">
-                            <span>Lina Mars</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="active item">
-                        <div className="participant">
-                          <img alt="" src="http://keenthemes.com/assets/bootsnipp/img1-small.jpg" className="pull-left" />
-                          <div className="pull-left">
-                            <span>Lina Mars</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="item">
-                        <div className="participant">
-                          <img alt="" src="http://keenthemes.com/assets/bootsnipp/img1-small.jpg" className="pull-left" />
-                          <div className="pull-left">
-                            <span>Lina Mars</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="item">
-                        <div className="participant">
-                          <img alt="" src="http://keenthemes.com/assets/bootsnipp/img1-small.jpg" className="pull-left" />
-                          <div className="pull-left">
-                            <span>Lina Mars</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                <ParticipantsList users={ participants } highlightUsers={ highlightUsers } />
               </div>
             </div>
           </div>
@@ -129,7 +99,7 @@ export default class Event extends Component {
   }
 
   contentWayPoint() {
-    var i = 0;
+    let i = 0;
 
     $('.animate-box').waypoint(function(direction) {
       if (direction === 'down' && !$(this.element).hasClass('animated')) {
@@ -156,4 +126,5 @@ export default class Event extends Component {
       }
     }, { offset: '85%' });
   }
+
 }

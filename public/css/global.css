@@ -556,12 +556,19 @@ header .fh5co-navbar-brand .fh5co-logo:focus {
 
 .ri-grid ul li {
   background: transparent !important;
+  width: 110px;
 }
 
 .ri-grid ul li a:hover img,
 .ri-grid ul li a:focus img {
   transform: scale(1);
   border: 1px solid red;
+}
+
+.ri-grid ul li img {
+  width: 100px;
+  height: 100px;
+  padding: 5px;
 }
 
 .grid-photo {
